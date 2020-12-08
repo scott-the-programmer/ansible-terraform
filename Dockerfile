@@ -17,4 +17,4 @@ RUN apt-get update && apt-get --no-install-recommends install -y \
     rm -rf /var/lib/apt/lists/*
 
 RUN pip3 install --upgrade pip
-RUN pip3 install "ansible[azure]" "pywinrm>=0.4.1" "jmespath>=0.10.0"
+RUN pip3 install "ansible[azure]==2.9.3" "pywinrm>=0.4.1" "jmespath>=0.10.0"
